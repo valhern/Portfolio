@@ -23,16 +23,16 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-
 <!-- SECTION HERO -->
 <section class="hero" id="accueil">
 
-    <img src="https://media.discordapp.net/attachments/1475863160060641446/1485591520936726609/Logo_VH_rouge_avec_f.png?ex=69c660eb&is=69c50f6b&hm=6520a55511fd639f0541e661c9e2776c56ecf166ff25ce20e0e0ba3b30bbaf8c&=&format=webp&quality=lossless&width=1240&height=826"
-    alt="Illustration"
-    class="hero-image">
+    <img 
+        src="https://media.discordapp.net/attachments/1475863160060641446/1487091495587676272/1758536168605.png?ex=69c7e161&is=69c68fe1&hm=7acdb02e6c8e29b98914f1e07d96cc4f705025cfe0ffd0914b4de21fadbe8243&=&format=webp&quality=lossless&width=500&height=500"
+        alt="Illustration"
+        class="hero-image profile-circle">
 
-    <h1 class="hero-title">Technicien Réseau</h1>
-    <p class="hero-subtitle">Créateur d’infrastructures sécurisées, VLAN, Cisco, CTF et solutions réseau.</p>
+    <h1 class="hero-title">Etudiant</h1>
+    <p class="hero-subtitle">BTS1 Services Informatiques aux Organisations - spécialité SISR (Solution d’Infrastructure, Système et Réseaux)</p>
 
     <div class="hero-buttons">
         <a href="#projets" class="btn primary">Explorer mes projets</a>
@@ -41,7 +41,6 @@
 
     <div class="scroll-indicator">SCROLL POUR DÉCOUVRIR</div>
 </section>
-
 <!-- SECTION À PROPOS -->
 <section class="section" id="apropos">
     <h2>À propos</h2>
@@ -75,13 +74,18 @@
         <li class="skill-animate"><strong>Support & Maintenance :</strong> assistance utilisateur, dépannage, gestion de parcs</li>
         <li class="skill-animate"><strong>Systèmes :</strong> administration, Active Directory, virtualisation</li>
     </ul>
-</section>
+    </section>
+    <!-- SECTION PROJETS -->
+    <section class="section" id="projets">
 
-<!-- SECTION PROJETS -->
-<section class="section" id="projets">
-    <h2>Projets</h2>
+        <div class="projet-title">
+            <h2>Projets</h2>
+            <a href="https://github.com/valhern/cisco   " target="_blank" class="github-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </a>
+        </div>
 
-    <div class="project-scroll">
+        <div class="project-scroll">
 
         <div class="project-item" style="cursor:pointer;">
             <img src="https://media.discordapp.net/attachments/1475863160060641446/1486725012822950120/image.png?ex=69c68c11&is=69c53a91&hm=0ed19ad703541f65994c81544ab37a4755a8dacd065e6ecf157001b0c4c55a67&=&format=webp&quality=lossless&width=1240&height=928" alt="Projet VLAN">
@@ -108,13 +112,13 @@
 <!-- SECTION CONTACT -->
 <section class="section" id="contact">
     <h2>Contact</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Votre nom">
-        <input type="email" placeholder="Votre email">
-        <textarea rows="4" placeholder="Votre message"></textarea>
-        <button class="btn primary full">Envoyer</button>
-    </form>
-</section>
+
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xgopbzor" method="POST">
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+    <button type="submit" class="btn primary full">Envoyer</button>
+</form>
 
 <footer>
     © 2026 • Valentin Hernoux – Réseau & Cybersécurité
@@ -274,6 +278,9 @@ closeProject.addEventListener("click", () => {
     projectPage.style.display = "none";
 });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="JS/main.js"></script>
 
 </body>
 </html>
