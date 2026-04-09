@@ -288,7 +288,35 @@ body {
 .btn.full {
     width: 100%;
 }
+.projet-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
+.github-icon img {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    transition: 0.2s ease;
+}
+
+.github-icon img:hover {
+    background-color: #000;
+    filter: invert(1);
+    transform: scale(1.1);
+}
+.profile-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    display: block;
+    margin: 0 auto 20px;
+}
 /* FOOTER */
 footer {
     text-align: center;
